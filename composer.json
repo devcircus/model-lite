@@ -1,0 +1,38 @@
+{
+    "name": "bright-components/model-lite",
+    "description": "Eloquent-esque base class for custom models in your php application. (Fork of jenssegers/model)",
+    "version": "1.0.0-beta.1",
+    "keywords": [
+        "bright-components",
+        "laravel",
+        "model",
+        "eloquent"
+    ],
+    "homepage": "https://github.com/bright-components/model-lite",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clayton Stone",
+            "email": "clay@phpstage.com",
+            "homepage": "https://phpstage.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "5.7.* || 5.8.*",
+        "illuminate/contracts": "5.7.* || 5.8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "satooshi/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrightComponents\\ModelLite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": ["tests/stubs"]
+    }
+}
