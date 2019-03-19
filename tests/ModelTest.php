@@ -253,7 +253,7 @@ class ModelTest extends TestCase
     /** @test */
     public function testTotallyGuarded()
     {
-        $this->expectException('BrightComponents\Model\MassAssignmentException');
+        $this->expectException('BrightComponents\ModelLite\MassAssignmentException');
 
         $model = new ModelStub();
         $model->guard(['*']);
