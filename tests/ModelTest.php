@@ -4,7 +4,6 @@ use PHPUnit\Framework\TestCase;
 
 class ModelTest extends TestCase
 {
-
     /** @test */
     public function testAttributeManipulation()
     {
@@ -254,7 +253,7 @@ class ModelTest extends TestCase
     /** @test */
     public function testTotallyGuarded()
     {
-        $this->setExpectedException('BrightComponents\Model\MassAssignmentException');
+        $this->expectException('BrightComponents\Model\MassAssignmentException');
 
         $model = new ModelStub();
         $model->guard(['*']);
